@@ -1,0 +1,33 @@
+extends layout
+
+block header
+	title MD5.XYZ &#45; Online MD5 Encrypter &amp; Decrypter
+
+	<!-- Meta Tags -->
+	meta(name='Description', content='MD5.XYZ allows you to quickly encrypt and decrypt MD5 hashs with our huge database that contains more than 5 billions of words!')
+	meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+	meta(name='viewport', content='width=devide-width, initial-scale=1')
+
+	<!-- Fonts -->
+	link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800')
+
+	<!-- Stylesheets -->
+	link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css')
+	link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap-theme.min.css')
+	link(rel='stylesheet', href='/stylesheets/style.css')
+
+block content
+	div#divContainer(class='container')
+		form#formDoHash(name='hash',method='post',action='')
+			div(class='form-group')
+				input#inputText(type='text', placeholder='Text to Hash', name='inputText', class='form-control input-lg')
+				input#inputHash(type='text', placeholder='Hash to Text', name='inputHash', class='form-control input-lg')
+			div(class='well',style='cursor:pointer',onclick='document.location="/hashlist?dl"')
+				p Click here to download our hash database.
+	div#bottomInfo Powered by 
+		a(href='http://nodejs.org/',target='_BLANK') Node.js
+
+	script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+	script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js')
+	script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js')
+	script(src='/javascripts/main.js')
