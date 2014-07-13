@@ -5,13 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-// Stuff I put here
-    var db = require('mongodb');
-    var monk = require('monk');
-    var db = monk('localhost:27017/md5list');
-// End
-
-var routes = require('./routes/index');
+var db = require('mongodb');
+var monk = require('monk');
+var db = monk('localhost:27017/md5list');
 
 var app = express();
 app.listen(3001);
@@ -33,7 +29,9 @@ app.use(function(req,res,next){
     next();
 });
 
-app.use('/', routes);
+app.use('/', require('./routes/index'));
+app.use('/hashlist', require('./routes/hashlist'));
+app.use('/doHash', require('./routes/dohash'));
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
