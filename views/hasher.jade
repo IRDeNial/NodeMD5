@@ -24,8 +24,12 @@ block content
 				input#inputHash(type='text', placeholder='Hash to Text', name='inputHash', class='form-control input-lg')
 			div(class='well',style='cursor:pointer',onclick='document.location="/hashlist?dl"')
 				p Click here to download our hash database.
-	div#bottomInfo Powered by 
-		a(href='http://nodejs.org/',target='_BLANK') Node.js
+	div#bottomInfo
+		span Powered by
+			a(href='http://nodejs.org/',target='_BLANK') Node.js
+		span Source on 
+			a(href='https://github.com/TheDeathStar/md5.xyz', target='_BLANK') GitHub
+
 
 	script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
 	script(src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js')

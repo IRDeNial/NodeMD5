@@ -47,6 +47,10 @@ div#bottomInfo {
 	right: 10px;
 }
 
+div#bottomInfo span {
+	margin-left: 10px;
+}
+
 @media only screen and (max-device-width: 480px) {
 	body {
 		background: rgba(250,250,250,1);
