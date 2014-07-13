@@ -5,7 +5,7 @@ Open Source MD5 Hash And Reverse Web Application
 ## About
 **NodeMD5** is a simple web application powered by Node.JS and built on a MEAN (Mongo, Express, Angler, Nginx) stack.
 
-[Demo: http://md5.xyz](http://md5.xyz)
+**Demo**: [http://md5.xyz](http://md5.xyz)
 
 ## Screenshots
 [<img src="http://i.imgur.com/RzPONMC.png" />](http://i.imgur.com/RzPONMC.png)
