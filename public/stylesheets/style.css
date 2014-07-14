@@ -29,7 +29,22 @@ input#inputText, input#inputHash {
 
 div.well {
 	margin-top: 30px;
+	background-color: rgba(100,100,100,1);
+
+	background-image: linear-gradient(to bottom, #F5F5F5 0px, #E8E8E8 100%);
+	background-repeat: repeat-x;
+	border-color: #DCDCDC;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
+div.well.active {
+	background-color: rgba(200,200,200,1);
+
+	background-image: linear-gradient(to bottom, #E8E8E8 0px, #F5F5F5 100%);
+	background-repeat: repeat-x;
+	border-color: #DCDCDC;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 1px 0px rgba(255, 255, 255, 0.1);
+}
+
 div.well p {
 	font-size: 16px;
 	line-height: 16px;
@@ -49,6 +64,17 @@ div#bottomInfo {
 
 div#bottomInfo span {
 	margin-left: 10px;
+}
+
+.disableGradient {
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-image: none;
+	background-repeat: no-repeat;
+	filter: none;
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -79,6 +105,9 @@ div#bottomInfo span {
 
 	div.well {
 		margin-top: 30px;
+	}
+	div.well:hover {
+		background-color: rgba(200,200,200,1);
 	}
 	div.well p {
 		font-size: 16px;

@@ -1,4 +1,10 @@
 $(document).ready(function(){
+	$("#divDownload").mousedown(function(){
+		$("#divDownload").addClass("active");
+	}).mouseup(function(){
+		$("#divDownload").removeClass("active");
+	});
+
 	function doHash(string,dest) {
 		$.ajax({
 			url: '/doHash',
