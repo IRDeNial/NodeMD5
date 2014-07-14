@@ -8,6 +8,7 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 node_modules/
+data/
 
 # Windows Installer files
 *.cab
@@ -27,7 +28,8 @@ node_modules/
 .LSOverride
 
 # Icon must ends with two \r.
-Icon
+Icon
+
 
 # Thumbnails
 ._*
