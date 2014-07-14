@@ -3,9 +3,7 @@ var router = express.Router();
 
 // Get request to hash
 router.get('/', function(req, res) {
-	res.render('hasher', {
-		title: "MD5.xyz"
-	});
+	res.render('hasher');
 });
 
 module.exports = router;
