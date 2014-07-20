@@ -45,7 +45,7 @@ router.get('/', function(req, res) {
 
     collection.find({},{},function(e,docs){
     	if(!download)
-	    	output += '<textarea id="hideThis" spellcheck="false" readonly="readonly" wrap="off" style="color:rgba(0,0,0,1);width:100%;height:100%;margin:auto;position:absolute;top:0;bottom:0;left:0;right:0;resize:none;display:hidden;">';
+	    	output += '<textarea id="hideThis" spellcheck="false" readonly="readonly" wrap="off" style="color:rgba(0,0,0,1);width:100%;height:100%;margin:auto;position:absolute;top:0;bottom:0;left:0;right:0;resize:none;display:none;">';
     
     	docs.forEach(function(item){
     		output += item.hash + " - " + (!download ? entities.encodeHTML(filterNewLines(item.text)) : filterNewLines(item.text)) + '\r' + '\n';
