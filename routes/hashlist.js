@@ -52,7 +52,7 @@ router.get('/', function(req, res) {
     	});
     	if(!download) {
 	    	output += '</textarea>';
-            output += '<script src=//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>';
+            output += '<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>';
             output += '<script>$(document).ready(function(){$("#hideThis").show();});</script>'
         }
         res.send(output);
