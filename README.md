@@ -26,4 +26,4 @@ NodeMD5 requires the following software to be installed:
 4. Run **node app** or any other module that allows you to run node applications (such as nodemon).
 
 ## License
-NodeBB is licensed under the **GNU General Public License v3 (GPL-3)** (http://www.gnu.org/copyleft/gpl.html)
+NodeMD5 is licensed under the **GNU General Public License v3 (GPL-3)** (http://www.gnu.org/copyleft/gpl.html)
