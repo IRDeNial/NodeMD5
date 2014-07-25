@@ -20,10 +20,7 @@ NodeMD5 requires the following software to be installed:
 
 ## Installation
 1. Set up a [MEAN stack](http://mean.io) or any other stack that uses MongoDB, Express, and Angler.
-2. In app.js, edit the configuration to fit your database.
-
-  2.1. Right now, it is set to localhost with no user/pass for the database md5list.
-
+2. In app.js, edit the configuration to fit your database.  Right now, it is set to localhost with no user/pass for the database md5list.
 3. Navigate to the working directory
 4. Run **npm install** to add all necessary node modules.
 4. Run **node app** or any other module that allows you to run node applications (such as nodemon).
